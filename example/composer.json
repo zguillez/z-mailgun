@@ -1,0 +1,5 @@
+{
+  "require": {
+    "zguillez/z-mailgun": "^0.0.1"
+  }
+}

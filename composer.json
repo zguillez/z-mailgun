@@ -1,0 +1,27 @@
+{
+  "name": "zguillez/z-mailgun",
+  "description": "PHP module for Mailgun email sender",
+  "keywords": [
+    "php",
+    "mailgun",
+    "mail",
+    "email"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Guillermo de la Iglesia",
+      "email": "mail@zguillez.io"
+    }
+  ],
+  "require": {
+    "mailgun/mailgun-php": "^2.8",
+    "php-http/guzzle6-adapter": "^1.1",
+    "php-http/message": "^1.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Z\\": "src/"
+    }
+  }
+}
