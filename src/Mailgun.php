@@ -13,7 +13,7 @@ class Mailgun
   {
     $this->date = date("Y-m-d H:i:s");
     $this->ip = ($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : 0;
-    $this->client = new Mailgun\Mailgun($apikey);
+    $this->client = new \Mailgun\Mailgun($apikey);
     $this->domain = $domain;
   }
 
