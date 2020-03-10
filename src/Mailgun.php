@@ -26,7 +26,7 @@ class Mailgun
   //----------------------------------------------------------
   public function send($from, $to, $subject, $text)
   {
-    return $result["mailgun"] = $this->client->sendMessage($this->domain, [
+    return $this->client->sendMessage($this->domain, [
         'from' => $from,
         'to' => $to,
         'subject' => $subject,

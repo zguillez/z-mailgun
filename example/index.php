@@ -1,8 +1,6 @@
 <?php
 require 'vendor/autoload.php';
 //----------------------------
-$http = new Z\Mailgun();
-$data = ['a' => '1', 'b' => '2', 'c' => '3'];
-$result = $http->get('http://tracker.masterd.es/json', $data, true);
-//$result = $tools->post('http://tracker.masterd.es/json', $data, true);
+$mail = new Z\Mailgun('m.mydomain.com', 'key-****************************');
+$result = $mail->send("no_reply@mydomain.com", "dummy@gmail.com", "[test] z-mailgun", "this is a test...");
 var_dump($result);
